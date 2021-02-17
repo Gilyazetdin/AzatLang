@@ -6,7 +6,10 @@ My small programming language to improve my coding skills.
 - integer (64 bit)  
 `int width 300`
 - float (64 bit)  
-`float acceleration 300.7`
+```
+float height (width * 0.1) // it means float height = width * 0.1. This will not raise an error, 
+                           // since multiplication by a floating point number automatically converts int to float
+```
 - string  
 `string name "george"`
 - object (to combine other types)  
