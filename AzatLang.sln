@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HippoLang2", "HippoLang2\HippoLang2.csproj", "{D8A1C6AA-07FC-4136-AB54-5533C102CE65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzatLang", "AzatLang\AzatLang.csproj", "{D8A1C6AA-07FC-4136-AB54-5533C102CE65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

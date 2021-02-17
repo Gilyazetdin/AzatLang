@@ -8,7 +8,7 @@ namespace UserExtensions
 {
     public static class ExtendedString
     {
-        public static List<string> HippoSplit(this string buf)
+        public static List<string> SpecialSplit(this string buf)
         {
             List<string> arr = new List<string>();
             int previous = 0;

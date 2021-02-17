@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UserExtensions;
 
-namespace HippoLang2
+namespace AzatLang
 {
     public class Parser
     {
@@ -19,7 +19,7 @@ namespace HippoLang2
 
         public List<string> ReadNext()
         {
-            return input.ReadLine().HippoSplit();
+            return input.ReadLine().SpecialSplit();
         }
 
         public List<List<string>> ReadAll()
@@ -27,7 +27,7 @@ namespace HippoLang2
             List<List<string>> list = new List<List<string>>();
             while (!input.EndOfStream)
             {
-                list.Add(input.ReadLine().HippoSplit());
+                list.Add(input.ReadLine().SpecialSplit());
             }
             return list;
         }
@@ -40,11 +40,12 @@ namespace HippoLang2
         {
             variables = new Dictionary<string, object>();
         }
-
+        
         public void Translate(List<string> commands)
         {
             switch (commands[0])
             {
+                
                 case "print":
                     Print(commands[1].Trim('\"'));
                     break;

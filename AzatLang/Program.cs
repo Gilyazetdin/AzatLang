@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HippoLang2
+namespace AzatLang
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Parser parser = new Parser("a.hippo");
+            Parser parser = new Parser("example.azat");
             Interpretator inter = new Interpretator();
-            foreach (var elem in parser.ReadAll())
+            foreach (var line in parser.ReadAll())
             {
-                inter.Translate(elem);
+                inter.Translate(line);
             }
             Console.ReadKey(false);
         }
